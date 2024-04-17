@@ -1,0 +1,21 @@
+body {
+  background-color: aqua;
+}
+
+.album {
+  padding: 20px;
+  text-align: center;
+
+  .album:hover {
+    background-color: #f0f0f0;
+  }
+
+  .album:active {
+    transform: scale(0.98);
+  }
+
+  .album img {
+    width: 100%;
+    height: auto;
+  }
+}
