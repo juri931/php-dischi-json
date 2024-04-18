@@ -1,21 +1,73 @@
 body {
-  background-color: aqua;
+  background-color: #f4f4f4;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 150px;
+  margin: 20px auto;
+}
+
+.main-wrapper {
+  width: 56rem
+}
+
+.card-title {
+  font-size: 1.5em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.card-author {
+  font-size: 1.4em;
+  color: #575757;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
 }
 
 .album {
+  border-radius: 10px;
+  width: 18rem;
   padding: 20px;
   text-align: center;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+
+  background: linear-gradient(to right, #ff9966c7, #ff5e61c6);
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.album:hover {
+  background-color: #f9f9f9;
+  transform: scale(0.98);
 }
 
 .album img {
   width: 100%;
-  height: auto;
+  margin-bottom: 5px;
 }
 
-.album:hover {
-  background-color: #f0f0f0;
+
+.year {
+  font-weight: bold;
+  color: #333;
 }
 
-.album:active {
-  transform: scale(0.98);
+.genre {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 10px;
+  color: #666;
 }

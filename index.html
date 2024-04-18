@@ -30,20 +30,26 @@
 
 <body>
   <div id="app">
-    <div class="container">
-      <ul>
-        <li v-for="(item, index) in list" :key="index" class="album list-group-item">
-          <img :src="{{item.poster}}" alt="Copertina album">
-          <h2>{{item.title}}</h2>
-          <h3>{{item.author}}</h3>
-          <p>Anno: {{item.year}}</p>
-          <p>Genere: {{item.genre}}</p>
+    <div class="container main-wrapper">
+
+      <img class="logo" src="logo.png" alt="logo">
+
+      <ul class="row row-cols-3">
+        <li v-for="(item, index) in list" :key="index" class="album card list-group-item">
+          <img class="card-img-top" :src="item.poster" alt="Copertina album">
+          <div class="card-body">
+            <h2 class="card-title">{{item.title}}</h2>
+            <h3 class="card-author">{{item.author}}</h3>
+            <p class="year">Anno: {{item.year}}</p>
+            <p class="genre">Genere: {{item.genre}}</p>
+
+          </div>
         </li>
       </ul>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
