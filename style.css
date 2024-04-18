@@ -13,7 +13,15 @@ body {
   margin: 20px auto;
 }
 
+#add {
+  position: absolute;
+  font-size: larger;
+  left: 20px;
+  top: 150px;
+}
+
 .main-wrapper {
+  position: relative;
   width: 56rem
 }
 
@@ -109,7 +117,7 @@ label {
 
 .genre {
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-right: 10px;
   color: #666;
 }
