@@ -131,9 +131,15 @@ label {
   background: linear-gradient(to right, #ff9966c7, #ff5e61c6);
   padding: 20px;
   border-radius: 20px;
-}
 
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  input {
+    padding-block-end: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+  }
 }
