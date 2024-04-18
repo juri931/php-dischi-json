@@ -38,10 +38,13 @@
 
         <li v-for="(item, index) in list" :key="index" class="album card list-group-item">
 
+
           <div class="card-hover">
             <img :src="item.logo" alt="band-logo">
             <p class="desc">{{item.desc}}</p>
+            <a class="heart" tabindex="1">&hearts;</a>
           </div>
+
 
           <img class="card-img-top" :src="item.poster" alt="Copertina album">
           <div class="card-body">
