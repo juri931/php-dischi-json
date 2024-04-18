@@ -59,7 +59,8 @@ ul {
   }
 }
 
-.heart {
+label {
+  display: block;
   position: absolute;
   bottom: 8px;
   right: 25px;
@@ -68,9 +69,14 @@ ul {
   text-decoration: none;
   cursor: pointer;
 
-  &:hover {
-    color: red;
-  }
+}
+
+#heart {
+  display: none;
+}
+
+#heart:checked+label {
+  color: red;
 }
 
 .album:hover {
