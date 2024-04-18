@@ -47,18 +47,40 @@ ul {
   padding: 20px;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  position: relative;
+}
+
+.card-hover {
+  display: none;
+
+  p {
+    font-weight: 700;
+  }
 }
 
 .album:hover {
   background-color: #f9f9f9;
-  transform: scale(0.98);
+  transform: scale(1.05);
+  z-index: 999;
+
+  .card-hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 }
 
 .album img {
   width: 100%;
   margin-bottom: 5px;
 }
-
 
 .year {
   font-weight: bold;

@@ -32,10 +32,17 @@
   <div id="app">
     <div class="container main-wrapper">
 
-      <img class="logo" src="logo.png" alt="logo">
+      <img class="logo" src="img/logo.png" alt="logo">
 
       <ul class="row row-cols-3">
+
         <li v-for="(item, index) in list" :key="index" class="album card list-group-item">
+
+          <div class="card-hover">
+            <img :src="item.logo" alt="band-logo">
+            <p class="desc">{{item.desc}}</p>
+          </div>
+
           <img class="card-img-top" :src="item.poster" alt="Copertina album">
           <div class="card-body">
             <h2 class="card-title">{{item.title}}</h2>
