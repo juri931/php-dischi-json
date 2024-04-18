@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f4f4;
+  background-color: #a4cbed;
   font-family: 'Helvetica Neue', sans-serif;
   color: #333;
   line-height: 1.6;
@@ -12,6 +12,11 @@ body {
   height: 150px;
   margin: 20px auto;
 }
+
+.add-menu {
+  display: none;
+}
+
 
 #add {
   position: absolute;
@@ -76,7 +81,6 @@ label {
   color: white;
   text-decoration: none;
   cursor: pointer;
-
 }
 
 #heart {
@@ -120,4 +124,16 @@ label {
   font-size: 0.9em;
   margin-right: 10px;
   color: #666;
+}
+
+/* New Album Page */
+.new-album-menu {
+  background: linear-gradient(to right, #ff9966c7, #ff5e61c6);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
 }

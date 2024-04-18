@@ -5,6 +5,15 @@ createApp({
     return {
       apiUrl: "server.php",
       list: [],
+      newAlbum: {
+        title: "",
+        author: "",
+        year: "",
+        poster: "",
+        genre: "",
+        logo: "",
+        desc: "",
+      },
     };
   },
   methods: {
